@@ -1,6 +1,7 @@
 package com.maven.selenium;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
 public class Demo
@@ -9,7 +10,7 @@ public class Demo
     @Test
     public void demoTest()
 	{
-		WebDriver driver =new ChromeDriver();
+		WebDriver driver =new FirefoxDriver();
 		driver.get("https://facebook.com");
 		String TitleofBrowser=driver.getTitle();
 		System.out.println(TitleofBrowser);
