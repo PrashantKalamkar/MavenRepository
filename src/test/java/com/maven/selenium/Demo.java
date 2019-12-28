@@ -11,6 +11,8 @@ public class Demo
 	{
 		WebDriver driver =new ChromeDriver();
 		driver.get("https://facebook.com");
+		String TitleofBrowser=driver.getTitle();
+		System.out.println(TitleofBrowser);
 		driver.quit();
 		System.out.println("Hello");
 		
