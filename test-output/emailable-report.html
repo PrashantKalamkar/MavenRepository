@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">MavenProject</th></tr>
+<tr><td><a href="#t0">Allscripts</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">18,044</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">MavenProject</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Allscripts &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.maven.selenium.Demo</td><td><a href="#m0">demoTest</a></td><td rowspan="1">1576989598514</td><td rowspan="1">3241</td></tr><tr><th colspan="4">Allscripts &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.maven.selenium.Sample</td><td><a href="#m1">sampletest</a></td><td rowspan="1">1576989601771</td><td rowspan="1">14740</td></tr></tbody>
+</table>
+<h2>Allscripts</h2><h3 id="m0">com.maven.selenium.Demo#demoTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 80
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;NOTFOUND&apos;, ip: &apos;192.168.15.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_192&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x01260AE3+1706723]
+	Ordinal0 [0x011C68C1+1075393]
+	Ordinal0 [0x0113DFA9+516009]
+	Ordinal0 [0x010D0554+66900]
+	Ordinal0 [0x010CCCE2+52450]
+	Ordinal0 [0x010EBFD7+180183]
+	Ordinal0 [0x010EBDDD+179677]
+	Ordinal0 [0x010E9D4B+171339]
+	Ordinal0 [0x010D1D4A+73034]
+	Ordinal0 [0x010D2DC0+77248]
+	Ordinal0 [0x010D2D59+77145]
+	Ordinal0 [0x011DBB37+1162039]
+	GetHandleVerifier [0x012FA7C6+508998]
+	GetHandleVerifier [0x012FA504+508292]
+	GetHandleVerifier [0x0130F617+594583]
+	GetHandleVerifier [0x012FB036+511158]
+	Ordinal0 [0x011D3FFC+1130492]
+	Ordinal0 [0x011DD49B+1168539]
+	Ordinal0 [0x011DD603+1168899]
+	Ordinal0 [0x011F5B05+1268485]
+	BaseThreadInitThunk [0x772C7C04+36]
+	RtlInitializeExceptionChain [0x7766AB8F+143]
+	RtlInitializeExceptionChain [0x7766AB5A+90]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at com.maven.selenium.Demo.demoTest(Demo.java:12)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.maven.selenium.Sample#sampletest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
